@@ -308,6 +308,31 @@ We will use this <a href="{{ page.collaborative_notes }}">collaborative document
 {% endif %}
 
 {% comment %}
+
+SURVEYS - DO NOT EDIT SURVEY LINKS
+
+{% endcomment %}
+<h2 id="surveys">Surveys</h2>
+<p>Please be sure to complete the workshop survey (can be completed before you attend).</p>
+{% if site.carpentry == "pilot" %}
+<p><a href="{{ site.pilot_post_survey }}">Ed-DaSH Survey</a></p>
+{% elsif site.pilot_pre_survey or site.pilot_post_survey %}
+<div class="alert alert-danger">
+WARNING: you have defined custom pre- and/or post-survey links for
+a workshop not configured as a lesson pilot
+(the value of `site` is not set to `pilot` in `_config.yml`).
+Please comment out the `pilot_pre_survey` and `pilot_post_survey` fields
+in `_config.yml` or, if this workshop is a lesson pilot,
+change the value of `carpentry` to `pilot`.
+</div>
+{% else %}
+<p><a href="{{ site.pre_survey }}{{ site.github.project_title }}">Pre-workshop Survey</a></p>
+<p><a href="{{ site.post_survey }}{{ site.github.project_title }}">Post-workshop Survey</a></p>
+{% endif %}
+
+<hr/>
+
+{% comment %}
 SCHEDULE
 
 Show the workshop's schedule.
