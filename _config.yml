@@ -60,7 +60,7 @@ title: "Workflows with Snakemake"
 # pilot_pre_survey: "put the URL of your pre-workshop survey here"
 #
 # For a lesson pilot, uncomment the line below and add the URL of your post-workshop survey
-# pilot_post_survey: "put the URL of your post-workshop survey here"
+pilot_post_survey: "https://edinburgh.onlinesurveys.ac.uk/ed-dash_base_questionnaire"
 #
 #------------------------------------------------------------
 
@@ -79,7 +79,7 @@ repository: <USERNAME>/<PROJECT>
 # Email address, no mailto:
 # (Don't change this -- the contact address for your workshop will be set
 # in the index.md file)
-email: "team@carpentries.org"
+email: "Sharon.McDonald@ed.ac.uk"
 
 # Sites.
 amy_site: "https://amy.carpentries.org/"
